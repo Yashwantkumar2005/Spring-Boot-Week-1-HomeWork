@@ -5,10 +5,12 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class cakebaker{
+
     @Autowired
-    syrup syrup;
+    private  syrup syrup;
     @Autowired
-    frosting frosting;
+    private  frosting frosting;
+
     void bakecake(){
         String fostingtype= frosting.getfrostingtype();
         String syruptype=syrup.getsyruptype();
